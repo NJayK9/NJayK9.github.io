@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Life Care Clinic</title>
+    <link rel="stylesheet" href="appoint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">Life Care Clinic</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login page.html">Login and Registration</a></li>
+                    <li><a href="#" class="active">For Appointments</a></li>
+                    <li><a href="dashboard-1.html">Dashboard</a></li>
+                    <li><a href="patient.profile.html">Patient Profile</a></li>
+                    <li><a href="billing.html">Invoicing and billing</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="appointments-container">
+            <h1>Schedule Your Appointment</h1>
+            <div class="appointment-grid">
+                <div class="search-section">
+                    <h2>Find a Doctor</h2>
+                    <div class="search-filters">
+                        <input type="text" placeholder="Search by doctor name">
+                        <select>
+                            <option value="">Select Specialization</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="orthopedics">Orthopedics</option>
+                        </select>
+                        <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </div>
+
+                <div class="appointment-form">
+                    <h2>Book Appointment</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="patient-name">Full Name</label>
+                            <input type="text" id="patient-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patient-email">Email</label>
+                            <input type="email" id="patient-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patient-phone">Phone Number</label>
+                            <input type="tel" id="patient-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Date</label>
+                            <input type="date" id="appointment-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-time">Preferred Time</label>
+                            <select id="appointment-time" required>
+                                <option value="">Select Time</option>
+                                <option value="morning">09:00 AM - 12:00 PM</option>
+                                <option value="afternoon">02:00 PM - 05:00 PM</option>
+                                <option value="evening">06:00 PM - 09:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="symptoms">Symptoms/Reason for Visit</label>
+                            <textarea id="symptoms" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Schedule Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <h3>About Us</h3>
+                <p>Life Care Clinic is committed to patient well-being, offering innovative healthcare solutions with compassion and excellence.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login page.html">Login</a></li>
+                    <li><a href="appoint.html">Book Appointment</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h3>Subscribe & Follow</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <input type="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Life Care Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

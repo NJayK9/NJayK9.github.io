@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Life Care Clinic</title>
+    <link rel="stylesheet" href="billing.css">
+    <link rel="stylesheet" href="billing.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">Life Care Clinic</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login page.html">Login and Registration</a></li>
+                    <li><a href="appoint.html">For Appointments</a></li>
+                    <li><a href="dashboard-1.html">Dashboard</a></li>
+                    <li><a href="patient.profile.html">Patient Profile</a></li>
+                    <li><a href="billing.html">Invoicing and billing</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="billing-section">
+            <div class="billing-container">
+                <h2>Billing Information</h2>
+                <form class="billing-form">
+                    <div class="form-group">
+                        <label for="patient-name">Patient Name</label>
+                        <input type="text" id="patient-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patient-id">Patient ID</label>
+                        <input type="text" id="patient-id" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-date">Service Date</label>
+                            <input type="date" id="service-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="debit">Debit Card</option>
+                            <option value="cash">Cash</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3"></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="submit-btn">Submit Payment</button>
+                        <button type="reset" class="reset-btn">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <h3>About Us</h3>
+                <p>Life Care Clinic is committed to patient well-being, offering innovative healthcare solutions with compassion and excellence.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login page.html">Login</a></li>
+                    <li><a href="appoint.html">Book Appointment</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h3>Subscribe & Follow</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <input type="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Life Care Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

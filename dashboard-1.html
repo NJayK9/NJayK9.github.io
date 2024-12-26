@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Life Care Clinic</title>
+    <link rel="stylesheet" href="dashboard-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">Life Care Clinic</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login-registration.html">Login and Registration</a></li>
+                    <li><a href="appoint.html">For Appointments</a></li>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="patient.profile.html">Patient Profile</a></li>
+                    <li><a href="billing.html">Invoicing and billing</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="sidebar">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Welcome, Sasiru huvin</h3>
+                    <p>Patient ID: P12345</p>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="#"><i class="fas fa-calendar-alt"></i> Appointments</a>
+                    <a href="#"><i class="fas fa-file-medical"></i> Medical Records</a>
+                    <a href="#"><i class="fas fa-pills"></i> Prescriptions</a>
+                    <a href=""><i class="fas fa-money-bill-wave"></i> Billing</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                </nav>
+            </div>
+
+            <div class="main-content">
+                <div class="welcome-banner">
+                    <h1>Dashboard</h1>
+                    <p>Welcome back! Here's your health overview.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Next Appointment</h3>
+                        <p>Dec 28, 2024</p>
+                        <span>Dr. Nipuna Wanniarachchi</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Pending Reports</h3>
+                        <p>2 Reports</p>
+                        <span>View Details</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-file-medical-alt"></i>
+                        <h3>Recent Tests</h3>
+                        <p>3 Results Available</p>
+                        <span>Check Results</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-pills"></i>
+                        <h3>Medications</h3>
+                        <p>4 Active Prescriptions</p>
+                        <span>View All</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-history"></i> Recent Activities</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon"><i class="fas fa-file-medical"></i></div>
+                                <div class="activity-details">
+                                    <h4>Medical Report Updated</h4>
+                                    <p>Blood test results uploaded</p>
+                                    <span>Today, 10:30 AM</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon"><i class="fas fa-calendar-plus"></i></div>
+                                <div class="activity-details">
+                                    <h4>Appointment Scheduled</h4>
+                                    <p>Follow-up with Dr. Johnson</p>
+                                    <span>Yesterday, 3:45 PM</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon"><i class="fas fa-prescription"></i></div>
+                                <div class="activity-details">
+                                    <h4>Prescription Renewed</h4>
+                                    <p>Monthly medication update</p>
+                                    <span>Dec 23, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-calendar-alt"></i> Upcoming Appointments</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <div class="appointments-list">
+                            <div class="appointment-item">
+                                <div class="appointment-date">
+                                    <span class="date">28</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <h4>General Check-up</h4>
+                                    <p>Dr. Ashan Indika</p>
+                                    <span>10:00 AM - 10:30 AM</span>
+                                </div>
+                                <button class="reschedule-btn">Reschedule</button>
+                            </div>
+                            <div class="appointment-item">
+                                <div class="appointment-date">
+                                    <span class="date">30</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <h4>Dental Check-up</h4>
+                                    <p>Dr. Paveesha Shehal</p>
+                                    <span>2:00 PM - 3:00 PM</span>
+                                </div>
+                                <button class="reschedule-btn">Reschedule</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card reminders">
+                    <div class="card-header">
+                        <h2><i class="fas fa-bell"></i> Health Reminders</h2>
+                    </div>
+                    <div class="reminders-list">
+                        <div class="reminder-item">
+                            <i class="fas fa-syringe"></i>
+                            <div class="reminder-details">
+                                <h4>Vaccination Due</h4>
+                                <p>Annual flu shot reminder</p>
+                            </div>
+                            <button class="schedule-btn">Schedule</button>
+                        </div>
+                        <div class="reminder-item">
+                            <i class="fas fa-pills"></i>
+                            <div class="reminder-details">
+                                <h4>Medication Refill</h4>
+                                <p>Blood pressure medication needs refill</p>
+                            </div>
+                            <button class="schedule-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <h3>About Us</h3>
+                <p>Life Care Clinic is committed to patient well-being, offering innovative healthcare solutions with compassion and excellence.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login page.html">login</a></li>
+                    <li><a href="appoint.html">Book Appointment</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h3>Subscribe & Follow</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <input type="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Life Care Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
