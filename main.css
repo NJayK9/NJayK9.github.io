@@ -52,11 +52,8 @@ nav ul li a.active, nav ul li a:hover {
 
 
 main {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex: 1;
+    padding: 40px 20px;
 }
 
 .welcome-section, .appointment-section {
