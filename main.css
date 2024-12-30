@@ -240,3 +240,18 @@ footer {
     color: #ddd;
 }
 
+@media (max-width: 768px) {
+    .appointment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
