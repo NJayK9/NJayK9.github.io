@@ -29,7 +29,6 @@ header {
     align-items: center;
 }
 
-/* Base navigation styles */
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -60,7 +59,6 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Mobile navigation styles */
 @media (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
@@ -159,7 +157,6 @@ nav ul li a {
     width: 100%;
 }
 
-/* Button group styles */
 .button-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,7 +187,6 @@ nav ul li a {
     color: white;
 }
 
-/* Mobile-specific styles */
 @media (max-width: 768px) {
     .billing-section {
         width: 95%;
@@ -211,10 +207,9 @@ nav ul li a {
     .form-group select,
     .form-group textarea {
         padding: 14px;
-        font-size: 16px; /* Prevents iOS zoom on focus */
+        font-size: 16px;
     }
 
-    /* Ensure consistent spacing */
     .form-group label {
         margin-bottom: 4px;
     }
