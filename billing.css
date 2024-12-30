@@ -46,8 +46,10 @@ nav ul li a {
     font-size: 1rem;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    color: #ff5c5c; 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
 
 main {
