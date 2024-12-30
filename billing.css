@@ -104,52 +104,120 @@ nav ul li a {
 }
 
 .billing-section {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 600px;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body {
-    background: url('source.invoicing.b.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.billing-container h2 {
+.billing-section h2 {
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
 }
 
 .billing-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.form-row .form-group {
-    flex: 1;
+    gap: 8px;
+    width: 100%;
 }
 
 .form-group label {
-    font-weight: bold;
+    font-weight: 600;
     color: #333;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Service Date and Amount row */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Button group styles */
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.submit-btn,
+.reset-btn {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #666;
+    color: white;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .billing-section {
+        width: 95%;
+        padding: 20px 15px;
+        margin: 10px auto;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .button-group {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px;
+        font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+
+    /* Ensure consistent spacing */
+    .form-group label {
+        margin-bottom: 4px;
+    }
 }
 
 .form-group input,
