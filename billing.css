@@ -152,17 +152,6 @@ body {
     background-color: #555;
 }
 
-@media (max-width: 768px) {
-    .billing-section {
-        width: 95%;
-    }
-
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
 footer {
     background: linear-gradient(to right, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     color: #fff;
@@ -261,4 +250,20 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
     color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .appointment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
