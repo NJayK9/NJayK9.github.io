@@ -1,192 +1,280 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 html, body {
     height: 100%;
-    margin: 0;
-    background-color: #f2f2f7;  
+    margin: 0;  
 }
 
 body {
+    background: url('source.img.hp.jpg') no-repeat center center fixed;
+    background-size: cover; 
     display: flex;
     flex-direction: column;
 }
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ff5c5c; 
+}
+
 main {
     flex: 1;
-    padding: 0; 
-    background-color: #f2f2f7; 
+    padding: 40px 20px;
 }
 
 .billing-section {
-    width: 100%; 
-    max-width: none;
-    margin: 0;
-    background-color: #ffffff;
-    padding: 20px 16px;
-    border-radius: 0;
-    box-shadow: none;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.billing-section h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 24px;
-    text-align: left;
-    padding: 0 4px;
+body {
+    background: url('source.invoicing.b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.billing-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.billing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .form-group {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.form-group label {
-    display: block;
-    font-size: 17px;
-    color: #000000;
-    font-weight: normal;
-    margin-bottom: 8px;
-    padding: 0 4px;
-}
-
-/* Form inputs */
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #dadada;
-    border-radius: 10px;
-    font-size: 17px;
-    background-color: #ffffff;
-    margin: 0;
-    -webkit-appearance: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .form-row {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 12px;
-    width: 100%;
-    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-select.payment-method {
-    background-color: rgba(239, 239, 239, 0.9);
-    color: #007AFF;
-    border: none;
-    padding: 12px 16px;
-    width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23007AFF' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
+.form-row .form-group {
+    flex: 1;
 }
 
-textarea.description {
-    min-height: 100px;
-    resize: none;
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
 }
 
 .button-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 12px;
-    margin-top: 24px;
-    padding: 0 4px;
-    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .submit-btn,
 .reset-btn {
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 500;
+    padding: 10px 20px;
     border: none;
-    width: 100%;
-    -webkit-appearance: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn {
-    background-color: #FF3B30;
+    background-color: #ff5c5c;
     color: white;
 }
 
+.submit-btn:hover {
+    background-color: #ff2f2f;
+}
+
 .reset-btn {
-    background-color: #8E8E93;
+    background-color: #666;
     color: white;
+}
+
+.reset-btn:hover {
+    background-color: #555;
 }
 
 @media (max-width: 768px) {
     .billing-section {
-        padding: 20px 16px;
+        width: 95%;
     }
 
     .form-row {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        font-size: 16px;
-        padding: 14px 16px;
-    }
-
-    .button-group {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
-.submit-btn,
-.reset-btn {
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 500;
-    border: none;
+footer {
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 30px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.footer-column {
+    max-width: 300px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff5c5c;
+    padding-bottom: 5px;
+}
+
+.footer-column p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff5c5c; 
+}
+
+
+.newsletter input {
     width: 100%;
-    -webkit-appearance: none;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
 }
 
-.submit-btn {
-    background-color: #FF3B30;  
-    color: white;
+.newsletter button {
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.reset-btn {
-    background-color: #8E8E93;  
-    color: white;
+.newsletter button:hover {
+    background-color: #ff2f2f;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff5c5c; 
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    color: #ddd;
 }
 
 @media (max-width: 768px) {
-    .billing-section {
-        margin: 0;
-        padding: 20px 16px;
-    }
-
-    .form-row {
+    .appointment-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
-
-    .button-group {
-        grid-template-columns: 1fr 1fr;
+    
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        font-size: 16px;  
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
